@@ -9,7 +9,7 @@ const api = require("./routes/api");
 
 app.use(
   cors({
-    origin: "https://nasa-9vxg.onrender.com",
+    origin: "https://nasa-9vxg.onrender.com/v1",
   })
 );
 

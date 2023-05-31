@@ -21,7 +21,7 @@ app.use(express.static(path.join('../client/public')));
 app.use("/v1", api);
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.resolve('../client/public/index.html'));
+  res.sendFile(path.resolve('../client/public/index.html')); //__dirname, "..", "public", "index.html"
 });
 
 module.exports = app;

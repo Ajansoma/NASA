@@ -16,7 +16,7 @@ app.use(
 app.use(morgan("combined"));
 
 app.use(express.json());
-app.use(express.static(path.join('../client/public/src')));
+app.use(express.static(path.join('../client/public')));
 
 app.use("/v1", api);
 
